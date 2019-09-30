@@ -103,6 +103,7 @@ ENV RUST_CONFIGURE_ARGS \
       --set target.x86_64-unknown-linux-gnu.ranlib=/rustroot/bin/llvm-ranlib \
       --set llvm.thin-lto=true \
       --set rust.jemalloc
+      --set rust.parallel-compiler
 ENV SCRIPT python2.7 ../x.py dist --host $HOSTS --target $HOSTS
 ENV CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER=clang
 
